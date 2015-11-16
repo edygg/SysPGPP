@@ -5,3 +5,12 @@
 .page-footer {
   margin-top: 0 !important;
 }
+
+#sign-up-container {
+  margin-top: 3%;
+}
+
+h1.page-title {
+  margin: 0;
+  padding: 50px 0;
+}

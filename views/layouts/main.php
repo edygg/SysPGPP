@@ -28,19 +28,21 @@ AppAsset::register($this);
 <?php $this->beginBody() ?>
   <nav class="indigo">
     <div class="nav-wrapper">
-      <?= Html::a(Html::img('@web/img/unitec-logo.png', ['class' => 'img-responsive', 'height' => '64px']), Url::home()) ?>
+      <?= Html::a(Html::img('@web/img/unitec-logo.png', ['class' => 'img-responsive brand-logo', 'height' => '64px']), Url::home()) ?>
       <a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="sass.html">Inicio</a></li>
-        <li><a href="badges.html">Practicas</a></li>
-        <li><a href="collapsible.html">Proyectos</a></li>
-        <li><a href="collapsible.html">Preguntas Frecuentes</a></li>
+        <li><?= Html::a('Inicio', Url::home()) ?></li>
+        <li><?= Html::a('Entrar', '') ?></li>
+        <li><?= Html::a('Prácticas', '') ?></li>
+        <li><?= Html::a('Proyectos', '') ?></li>
+        <li><?= Html::a('Preguntas Frecuentes', '') ?></li>
       </ul>
       <ul class="side-nav" id="mobile-menu">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><?= Html::a('Inicio', Url::home()) ?></li>
+        <li><?= Html::a('Entrar', '') ?></li>
+        <li><a href="badges.html">Prácticas</a></li>
+        <li><a href="collapsible.html">Proyectos</a></li>
+        <li><a href="mobile.html">Preguntas Frecuentes</a></li>
       </ul>
     </div>
   </nav>

@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 use yii\helpers\Html;
+use yii\helpers\Url;
 
 $this->title = 'UNITEC';
 ?>
@@ -35,6 +36,15 @@ $this->title = 'UNITEC';
 
 <div class="container">
   <div class="row">
+    <div class="col s12">
+      <p class="flow-text center-align">¿Eres estudiante, representate de una empresa, jefe académico o asesor? Regístrate para poder usar el Gestor de Prácticas Profesionales y Proyectos de Graduación.</p>
+      <div class="col s2 offset-s5"><?= Html::a('Registrate', Url::toRoute('site/registration-choice'), ['class' => 'waves-effect waves-light btn-large red lighten-1']) ?></div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
     <div class="col m4 s12">
       <div class="card">
         <div class="card-image">
@@ -60,7 +70,7 @@ $this->title = 'UNITEC';
           <p>Puedes buscar el lugar donde realizarás tu práctica profesional o el proyecto de graduación, ver registros de asesoramiento y más.</p>
         </div>
         <div class="card-action">
-          <a href="#">Regístrate</a>
+          <a href="#">Entrar</a>
         </div>
       </div>
     </div>
