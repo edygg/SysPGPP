@@ -10,7 +10,7 @@ $this->title = 'Registro';
 
 <header class="indigo lighten-1">
   <div class="container">
-    <h1 class="page-title white-text"><?= $this->title ?></h1>
+    <h1 class="page-title white-text"><?= Html::encode($this->title) ?></h1>
   </div>
 </header>
   
