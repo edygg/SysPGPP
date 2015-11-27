@@ -2,6 +2,8 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use yii\helpers\ArrayHelper;
+use app\models\Faculties;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Majors */
@@ -9,21 +11,24 @@ use yii\widgets\ActiveForm;
 ?>
 
 <div class="majors-form">
+  <div class="container">
+    <div class="row">
+      <?php $form = ActiveForm::begin(); ?>
 
-    <?php $form = ActiveForm::begin(); ?>
+      <div class="input-field col s12">
+        <?= $form->field($model, 'name')->textInput(['maxlength' => true]) ?>
+      </div>
+      
+      <div class="input-field col s12">
+        <?= Html::activeDropDownList($model, 'faculty_id', ArrayHelper::map(Faculties::find()->all(), 'id', 'name')) ?>
+        <?= Html::tag('label', 'Facultad') ?>
+      </div>
 
-    <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
+      <div class="form-group">
+        <?= Html::submitButton($model->isNewRecord ? 'Guardar' : 'Actualizar', ['class' => $model->isNewRecord ? 'waves-effect waves-light btn red lighten-1' : 'waves-effect waves-light btn red lighten-1']) ?>
+      </div>
 
-    <?= $form->field($model, 'year')->textInput(['maxlength' => true]) ?>
-
-    <?= $form->field($model, 'semester')->textInput() ?>
-
-    <?= $form->field($model, 'faculty_id')->textInput() ?>
-
-    <div class="form-group">
-        <?= Html::submitButton($model->isNewRecord ? 'Create' : 'Update', ['class' => $model->isNewRecord ? 'btn btn-success' : 'btn btn-primary']) ?>
+      <?php ActiveForm::end(); ?>
     </div>
-
-    <?php ActiveForm::end(); ?>
-
+  </div>
 </div>

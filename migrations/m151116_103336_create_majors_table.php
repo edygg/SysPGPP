@@ -9,9 +9,7 @@ class m151116_103336_create_majors_table extends Migration
     {
       $this->createTable('majors', [
         'id' => $this->primaryKey(),
-        'title' => $this->string()->notNull(),
-        'year' => $this->string()->notNull(),
-        'semester' => $this->integer()->notNull(),
+        'name' => $this->string()->notNull(),
         'faculty_id' => $this->integer(),
       ]);
       

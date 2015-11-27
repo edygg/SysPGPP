@@ -8,9 +8,7 @@ use Yii;
  * This is the model class for table "majors".
  *
  * @property integer $id
- * @property string $title
- * @property string $year
- * @property integer $semester
+ * @property string $name
  * @property integer $faculty_id
  *
  * @property Faculties $faculty
@@ -31,9 +29,9 @@ class Majors extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title', 'year', 'semester'], 'required'],
-            [['semester', 'faculty_id'], 'integer'],
-            [['title', 'year'], 'string', 'max' => 255]
+            [['name'], 'required'],
+            [['faculty_id'], 'integer'],
+            [['name'], 'string', 'max' => 255]
         ];
     }
 
@@ -44,10 +42,8 @@ class Majors extends \yii\db\ActiveRecord
     {
         return [
             'id' => 'ID',
-            'title' => 'Title',
-            'year' => 'Year',
-            'semester' => 'Semester',
-            'faculty_id' => 'Faculty ID',
+            'name' => 'Nombre',
+            'faculty_id' => 'Facultad',
         ];
     }
 

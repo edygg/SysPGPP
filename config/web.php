@@ -17,12 +17,11 @@ $config = [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        'mailer' => [
-            'class' => 'yii\swiftmailer\Mailer',
-            // send all mails to a file by default. You have to set
-            // 'useFileTransport' to false and configure a transport
-            // for the mailer to send real emails.
-            'useFileTransport' => true,
+        'sendGrid' => [
+            'class' => 'bryglen\sendgrid\Mailer',
+            'username' => 'efgm1024',
+            'password' => 'Alecx1214',
+            'viewPath' => '@app/mail', // your view path here
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,

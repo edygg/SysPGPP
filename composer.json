@@ -16,9 +16,9 @@
     "require": {
         "php": ">=5.4.0",
         "yiisoft/yii2": ">=2.0.5",
-        "yiisoft/yii2-swiftmailer": "*",
         "bower-asset/materialize": ">=0.97.1",
-        "dektrium/yii2-user": "0.9.*@dev"
+        "dektrium/yii2-user": "0.9.*@dev",
+        "bryglen/yii2-sendgrid": "*"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",

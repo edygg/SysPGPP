@@ -8,11 +8,10 @@ use yii\widgets\DetailView;
 
 $this->title = $model->name;
 $this->params['breadcrumbs'][] = ['label' => 'Faculties', 'url' => ['index']];
-$this->params['breadcrumbs'][] = $this->title;
+$this->params['breadcrumbs'][] = ['label' => $this->title, 'url' => ''];
 ?>
 <div class="faculties-view">
-  
-  <header class="indigo lighten-1">
+  <header class="indigo lighten-1 page-header">
     <div class="container">
       <h1 class="page-title white-text"><?= Html::encode($this->title) ?></h1>
     </div>
@@ -27,7 +26,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <?= Html::a(Html::tag('i', 'delete', ['class' => 'material-icons']), ['delete', 'id' => $model->id], [
             'class' => 'btn-floating red',
             'data' => [
-                'confirm' => 'Are you sure you want to delete this item?',
+                'confirm' => '¿Está seguro que desea eliminar este elemento?',
                 'method' => 'post',
             ],
         ]) ?>
@@ -38,13 +37,14 @@ $this->params['breadcrumbs'][] = $this->title;
   
   <div class="container">
     <div class="row">
-      <?= DetailView::widget([
-          'model' => $model,
-          'attributes' => [
-              'id',
-              'name',
-          ],
-      ]) ?>
+      <div class="col s8 offset-s2">
+        <?= DetailView::widget([
+            'model' => $model,
+            'attributes' => [
+                'name',
+            ],
+        ]) ?>
+      </div>
     </div>
   </div>
 </div>

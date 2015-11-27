@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "5cd1edd6592e610c607bdf6d1cf56528",
-    "content-hash": "3376f06c85acd683758515f4f16bbd8a",
+    "hash": "4ddd89b84b838bd2665cc53677744d75",
+    "content-hash": "f84e0c996069409bc18a32c3f719d660",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -319,6 +319,48 @@
             ]
         },
         {
+            "name": "bryglen/yii2-sendgrid",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bryglen/yii2-sendgrid.git",
+                "reference": "3836996332da9dda36d07d8f5b3a805c65aae0a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bryglen/yii2-sendgrid/zipball/3836996332da9dda36d07d8f5b3a805c65aae0a5",
+                "reference": "3836996332da9dda36d07d8f5b3a805c65aae0a5",
+                "shasum": ""
+            },
+            "require": {
+                "sendgrid/sendgrid": "2.2.1"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "bryglen\\sendgrid\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Jayson Tan",
+                    "email": "bryantan16@gmail.com"
+                }
+            ],
+            "description": "Sendgrid Mailer for Yii 2",
+            "keywords": [
+                "bryglen",
+                "extension",
+                "sendgrid",
+                "yii2"
+            ],
+            "time": "2015-04-16 16:00:43"
+        },
+        {
             "name": "cebe/markdown",
             "version": "1.1.0",
             "source": {
@@ -484,6 +526,99 @@
                 "html"
             ],
             "time": "2013-11-30 08:25:19"
+        },
+        {
+            "name": "sendgrid/sendgrid",
+            "version": "2.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sendgrid/sendgrid-php.git",
+                "reference": "83cec4aa7a86064c8ea30cc7180b1b558b0ac7e9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sendgrid/sendgrid-php/zipball/83cec4aa7a86064c8ea30cc7180b1b558b0ac7e9",
+                "reference": "83cec4aa7a86064c8ea30cc7180b1b558b0ac7e9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "sendgrid/smtpapi": "0.*"
+            },
+            "replace": {
+                "sendgrid/sendgrid-php": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*",
+                "vlucas/phpdotenv": "1.0.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "SendGrid": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "This library allows you to quickly and easily send emails through SendGrid using PHP.",
+            "homepage": "http://github.com/sendgrid/sendgrid-php",
+            "keywords": [
+                "email",
+                "grid",
+                "send",
+                "sendgrid"
+            ],
+            "time": "2015-01-29 22:34:03"
+        },
+        {
+            "name": "sendgrid/smtpapi",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sendgrid/smtpapi-php.git",
+                "reference": "05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sendgrid/smtpapi-php/zipball/05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5",
+                "reference": "05ccf57bad5d1524e479b6dc0a2dfade88b3fbe5",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "replace": {
+                "sendgrid/smtpapi-php": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Smtpapi": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Build SendGrid X-SMTPAPI headers in PHP.",
+            "homepage": "http://github.com/sendgrid/smtpapi-php",
+            "keywords": [
+                "X-SMTP",
+                "api",
+                "email",
+                "grid",
+                "send",
+                "sendgrid",
+                "smtp",
+                "smtpapi",
+                "xsmtp"
+            ],
+            "time": "2015-04-14 02:37:45"
         },
         {
             "name": "swiftmailer/swiftmailer",
