@@ -28,6 +28,17 @@ $config = [
             'password' => 'Alecx1214',
             'viewPath' => '@app/mail', // your view path here
         ],
+        'mailer' => [
+          'class' => 'yii\swiftmailer\Mailer',
+          'transport' => [
+              'class' => 'Swift_SmtpTransport',
+              'host' => 'smtp.gmail.com',
+              'username' => 'efgm1024@gmail.com',
+              'password' => 'computacion1.',
+              'port' => '465',
+              'encryption' => 'tls',
+          ],
+        ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [

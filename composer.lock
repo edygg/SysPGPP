@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4ddd89b84b838bd2665cc53677744d75",
-    "content-hash": "f84e0c996069409bc18a32c3f719d660",
+    "hash": "76e220e2ad9d12aff4f6ec0fa7e10496",
+    "content-hash": "5c9867c5fb47e6d66ec103645dc25fa1",
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -179,16 +179,16 @@
         },
         {
             "name": "bower-asset/materialize",
-            "version": "v0.97.1",
+            "version": "v0.97.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Dogfalo/materialize.git",
-                "reference": "8b9ea2fbdc3eb2e5ad698627b6f4e2f93e991269"
+                "reference": "2ae067cca8ef38a0823dcdc3c97aa505e04b2443"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/8b9ea2fbdc3eb2e5ad698627b6f4e2f93e991269",
-                "reference": "8b9ea2fbdc3eb2e5ad698627b6f4e2f93e991269",
+                "url": "https://api.github.com/repos/Dogfalo/materialize/zipball/2ae067cca8ef38a0823dcdc3c97aa505e04b2443",
+                "reference": "2ae067cca8ef38a0823dcdc3c97aa505e04b2443",
                 "shasum": ""
             },
             "require": {
@@ -287,16 +287,16 @@
         },
         {
             "name": "bower-asset/yii2-pjax",
-            "version": "v2.0.4",
+            "version": "v2.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/yiisoft/jquery-pjax.git",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0"
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/3f20897307cca046fca5323b318475ae9dac0ca0",
-                "reference": "3f20897307cca046fca5323b318475ae9dac0ca0",
+                "url": "https://api.github.com/repos/yiisoft/jquery-pjax/zipball/6818718408086db6bdcf33649cecb86b6b4f9b67",
+                "reference": "6818718408086db6bdcf33649cecb86b6b4f9b67",
                 "shasum": ""
             },
             "require": {

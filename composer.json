@@ -1,6 +1,6 @@
 {
-    "name": "yiisoft/yii2-app-basic",
-    "description": "Yii 2 Basic Project Template",
+    "name": "SysPG",
+    "description": "Sistema de Control de Proyectos de Graduación y Prácticas Profesionales",
     "keywords": ["yii2", "framework", "basic", "project template"],
     "homepage": "http://www.yiiframework.com/",
     "type": "project",
@@ -18,7 +18,8 @@
         "yiisoft/yii2": ">=2.0.5",
         "bower-asset/materialize": ">=0.97.1",
         "dektrium/yii2-user": "0.9.*@dev",
-        "bryglen/yii2-sendgrid": "*"
+        "bryglen/yii2-sendgrid": "*",
+        "yiisoft/yii2-swiftmailer": "^2.0"
     },
     "require-dev": {
         "yiisoft/yii2-codeception": "*",
