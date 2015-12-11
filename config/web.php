@@ -7,6 +7,13 @@ $config = [
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
     'components' => [
+      'view' => [
+        'theme' => [
+          'pathMap' => [
+            '@dektrium/user/views' => '@app/views/users',
+          ],
+        ],
+      ],
       'urlManager' => [
             'class' => 'yii\web\UrlManager',
             'showScriptName' => false,
