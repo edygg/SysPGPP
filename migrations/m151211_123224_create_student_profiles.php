@@ -14,6 +14,7 @@ class m151211_123224_create_student_profiles extends Migration
         'unitec_id_number' => $this->string()->notNull(),
         'major_id' => $this->integer(),
         'campus_id' => $this->integer(),
+        'user_id' => $this->integer(),
       ]);
 
       $this->addForeignKey('FK_student_profiles_majors', 'student_profiles', 'major_id', 'majors', 'id', 'CASCADE', 'CASCADE');
@@ -22,7 +23,7 @@ class m151211_123224_create_student_profiles extends Migration
 
     public function down()
     {
-        $this->dropTale('student_profiles')
+        $this->dropTale('student_profiles');
     }
 
     /*
